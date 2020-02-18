@@ -59,10 +59,12 @@ with open('budget_data.csv', newline="") as csvfile:
     #calculate average change 
 monthlyProfitAverage = round(sum(totalMonthlyChange)/(totalMonths-1),2)
 
+## print output to terminal
+
 print(f"Total Months: {totalMonths} Total: ${profit} Average Change: ${monthlyProfitAverage}  Greatest Increase in Profits: {increaseIndex} : ${greatestIncrease} Greatest Decrease in Profits: {decreaseIndex} :${greatestDecrease}")
 
-print(f"{totalMonthlyChange}")
 
+# print out put to file 
 f = open("myResults.txt","w") 
 f.write("\nTotal Months: ")
 f.write(str(totalMonths))
