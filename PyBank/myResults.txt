@@ -1,0 +1,8 @@
+
+Total Months: 86.0
+Total Profit: 38382578.0
+Average Change: -2315.12
+Greatest Increase month : Feb-2012
+Greatest Increase : 1926159.0
+Greatest Decrease month : Sep-2013
+Greatest Decrease  : -2196167.0
