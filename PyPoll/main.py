@@ -23,6 +23,7 @@ firstBool = True
 
 #lsThe winner of the election based on popular vote.
 
+# open the csv file 
 with open('election_data.csv', newline="") as csvfile:
     csvreader = csv.reader(csvfile, delimiter=",")
     for row in csvreader:
@@ -30,14 +31,16 @@ with open('election_data.csv', newline="") as csvfile:
         if (firstBool == True):
             firstBool = False
         else:
+            # stick the values into an array 
             currentCandidate = row[2]
             candidatesArray.append(currentCandidate)
 #candidatesDict = Counter(candidatesArray)
 candidatesDict = {}
 for i in candidatesArray:
+    # create a hashmap from the array with counts 
   candidatesDict[i] = candidatesDict.get(i, 0) + 1
   
-
+# add up the total number of votes 
 for j in candidatesDict:
     totalVotes += candidatesDict[j]
 
